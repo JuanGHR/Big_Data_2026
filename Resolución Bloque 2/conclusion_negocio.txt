@@ -1,0 +1,33 @@
+
+ANÁLISIS DE MODELOS DE REGRESIÓN - BLOQUE II
+=============================================
+
+1. MODELO SELECCIONADO: Random Forest
+   - MAE:  147.26 euros
+   - RMSE: 227.12 euros
+   - R²:   0.926 (92.6% de varianza explicada)
+
+2. JUSTIFICACIÓN DE SELECCIÓN:
+   - Random Forest ofrece el mejor equilibrio entre precisión (menor RMSE)
+     y capacidad de capturar relaciones no lineales.
+   - El R² de 0.926 indica que el modelo explica casi 
+     el 93% de la variabilidad en los importes.
+   - La regularización (Ridge/Lasso) no mejora significativamente el 
+     rendimiento en este dataset.
+
+3. COMPARACIÓN CON OTROS MODELOS:
+   - Peor modelo: Ridge (alpha=1.0) (RMSE: 307.99)
+   - La diferencia de RMSE es de 80.87 euros
+
+4. IMPLICACIONES DE NEGOCIO:
+   - Con un MAE de 147.26 euros, el modelo comete 
+     errores promedio de aproximadamente ese valor.
+   - Esto representa un 12.7% 
+     de error relativo sobre el importe promedio.
+   - El modelo es útil para estimaciones rápidas pero no substitute 
+     cotizaciones precisas en casos de alto valor.
+
+5. RECOMENDACIONES:
+   - Usar el modelo para segmentar operaciones de bajo/alto valor.
+   - Para importes superiores a 3000 euros, considerar revisión manual.
+   - Mejorar con más datos históricos o features externos (temporada, promociones).
