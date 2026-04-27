@@ -1,0 +1,9 @@
+jupyterlab>=4.4
+notebook>=7.3
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.9
+scikit-learn>=1.5
+statsmodels>=0.14
+plotly>=5.24
+seaborn>=0.13
